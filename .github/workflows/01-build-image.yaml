@@ -19,9 +19,9 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.cauueh25 }}
-          password: ${{ secrets.Caue020892! }}
-
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
       - name: Calculate version
         id: calculate-version
         uses: bitshifted/git-auto-semver@v1
